@@ -10,8 +10,4 @@
       <ProjectReference Include="..\..\Contracts\Dashboard.Contracts\Dashboard.Contracts.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Contexts\Services\" />
-    </ItemGroup>
-
 </Project>

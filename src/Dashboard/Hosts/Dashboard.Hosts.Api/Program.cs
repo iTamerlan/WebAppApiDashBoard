@@ -20,6 +20,10 @@ builder.Services.AddSwaggerGen(s =>
         typeof(CommentDto),
         typeof(PostExtDto),
         typeof(RatingDto),
+        typeof(ContentDto),
+        typeof(ImageDto),
+        typeof(PublicUserDto),
+        typeof(TagDto),
         typeof(PostController)
     };
             
