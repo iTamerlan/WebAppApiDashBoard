@@ -1,0 +1,18 @@
+﻿using Dashboard.Contracts.Base;
+
+namespace Dashboard.Contracts.Attachment;
+
+/// <summary>
+/// Публичная информация о пользователе.
+/// </summary>
+public class PublicUserDto : BaseDto
+{
+    /// <summary>
+    /// Логин пользователя.
+    /// </summary>
+    public string UserLogin { get; set; }
+    /// <summary>
+    /// Дата регистрации.
+    /// </summary>
+    public string UserDateCreate { get; set; }
+}
