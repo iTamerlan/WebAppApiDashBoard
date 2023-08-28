@@ -1,6 +1,7 @@
 using Dashboard.Application.AppServices.Contexts.Post.Repositories;
 using Dashboard.Application.AppServices.Contexts.Post.Services;
 using Dashboard.Contracts;
+using Dashboard.Contracts.Attachment;
 using Dashboard.Hosts.Api.Controllers;
 using Dashboard.Infrastructure.DataAccess.Contexts.Post.Repositories;
 
@@ -16,6 +17,9 @@ builder.Services.AddSwaggerGen(s =>
     var includeDocsTypesMarkers = new[]
     {
         typeof(PostDto),
+        typeof(CommentDto),
+        typeof(PostExtDto),
+        typeof(RatingDto),
         typeof(PostController)
     };
             

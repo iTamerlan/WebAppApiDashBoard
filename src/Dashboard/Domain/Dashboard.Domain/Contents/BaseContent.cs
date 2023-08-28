@@ -1,9 +1,9 @@
 ﻿using Dashboard.Domain.Base;
 
-namespace Dashboard.Domain.Comments;
+namespace Dashboard.Domain.Contents;
 
 /// <summary>
-/// Сущность комментария.
+/// Сущность контента.
 /// </summary>
 public class BaseContent : BaseEntity
 {

@@ -3,7 +3,7 @@
 namespace Dashboard.Domain.PostExts;
 
 /// <summary>
-/// Сущность пользователя.
+/// Сущность расширенного объявления.
 /// </summary>
 public class PostExt : BaseEntity
 {
@@ -15,5 +15,12 @@ public class PostExt : BaseEntity
     /// Цена.
     /// </summary>
     public decimal Price { get; set; }
-
+    /// <summary>
+    /// Заголовок комментария.
+    /// </summary>
+    public string Title { get; set; }
+    /// <summary>
+    /// Автор комментария.
+    /// </summary>
+    public Guid AuthorId { get; set; }
 }
