@@ -1,6 +1,6 @@
 using Dashboard.Contracts;
 
-namespace Dashboard.Application.AppServices.Contexts.Post.Repositories;
+namespace Dashboard.Application.AppServices.Contexts.Repositories;
 
 /// <summary>
 /// Репозиторий для работы с объявлениями.

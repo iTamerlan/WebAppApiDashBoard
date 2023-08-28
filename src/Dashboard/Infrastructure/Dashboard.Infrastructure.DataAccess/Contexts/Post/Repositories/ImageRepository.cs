@@ -1,4 +1,4 @@
-﻿using Dashboard.Application.AppServices.Contexts.Post.Repositories;
+﻿using Dashboard.Application.AppServices.Contexts.Repositories;
 using Dashboard.Contracts.Attachment;
 
 namespace Dashboard.Infrastructure.DataAccess.Contexts.Post.Repositories;

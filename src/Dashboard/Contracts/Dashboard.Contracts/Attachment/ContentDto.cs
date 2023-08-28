@@ -1,24 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Dashboard.Contracts.Attachment;
+using Dashboard.Contracts.Base;
 
-namespace Dashboard.Contracts.Attachment
+
+namespace Dashboard.Contracts.Attachment;
+
+/// <summary>
+/// Блок контента.
+/// </summary>
+public class ContentDto: BaseDto
 {
-    internal class ContentDto
-    {
-        /// <summary>
-        /// Описание.
-        /// </summary>
-        public string Description { get; set; }
-        /// <summary>
-        /// Изображение.
-        /// </summary>
-        public IReadOnlyCollection<ImageDto> Image { get; set; }
-        /// <summary>
-        /// Номер по порядку.
-        /// </summary>
-        public int Number { get; set; }
-    }
+    /// <summary>
+    /// Описание.
+    /// </summary>
+    public string Description { get; set; }
+    /// <summary>
+    /// Изображение.
+    /// </summary>
+    public IReadOnlyCollection<ImageDto> Image { get; set; }
+    /// <summary>
+    /// Номер по порядку.
+    /// </summary>
+    public int Number { get; set; }
 }
