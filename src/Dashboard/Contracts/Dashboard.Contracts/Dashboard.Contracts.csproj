@@ -14,11 +14,4 @@
       <DocumentationFile>Dashboard.Contracts.xml</DocumentationFile>
     </PropertyGroup>
 
-    <ItemGroup>
-      <None Remove="Dashboard.Contracts.xml" />
-      <Content Include="Dashboard.Contracts.xml">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Content>
-    </ItemGroup>
-
 </Project>
