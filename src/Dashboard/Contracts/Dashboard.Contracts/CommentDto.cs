@@ -15,7 +15,7 @@ public class CommentDto : BaseDto
     /// <summary>
     /// Контент (текст/изображения).
     /// </summary>
-    //public IReadOnlyCollection<ContentDto> ContentList { get; set; }
+    public IReadOnlyCollection<ContentDto> ContentList { get; set; }
     /// <summary>
     /// Автор.
     /// </summary>
