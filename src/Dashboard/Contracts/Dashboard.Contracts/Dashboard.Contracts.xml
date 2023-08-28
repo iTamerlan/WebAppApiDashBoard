@@ -4,6 +4,11 @@
         <name>Dashboard.Contracts</name>
     </assembly>
     <members>
+        <member name="T:Dashboard.Contracts.Attachment.ContentDto">
+            <summary>
+            Блок контента.
+            </summary>
+        </member>
         <member name="P:Dashboard.Contracts.Attachment.ContentDto.Description">
             <summary>
             Описание.
