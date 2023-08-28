@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>4df56a06-a19e-4d50-9633-9a4d7f8e11cc</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="src\Dashboard\Application\" />
+    <Folder Include="src\Dashboard\Clients\" />
+    <Folder Include="src\Dashboard\Contracts\" />
+    <Folder Include="src\Dashboard\Domain\" />
+    <Folder Include="src\Dashboard\Hosts\" />
+    <Folder Include="src\Dashboard\Infrastructure\" />
+  </ItemGroup>
+
+</Project>
