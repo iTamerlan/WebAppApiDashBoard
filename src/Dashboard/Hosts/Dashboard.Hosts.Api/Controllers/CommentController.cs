@@ -2,6 +2,7 @@
 using Dashboard.Application.AppServices.Contexts.Post.Services;
 using Dashboard.Application.AppServices.Contexts.Services;
 using Dashboard.Contracts;
+using Dashboard.Contracts.Post;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Dashboard.Hosts.Api.Controllers;
