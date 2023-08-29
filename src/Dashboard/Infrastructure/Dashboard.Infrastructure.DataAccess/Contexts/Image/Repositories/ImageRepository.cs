@@ -1,10 +1,12 @@
 ﻿using Dashboard.Application.AppServices.Contexts.Image.Repositories;
 using Dashboard.Contracts.Image;
+using Dashboard.Domain.Posts;
 
 namespace Dashboard.Infrastructure.DataAccess.Contexts.Image.Repositories;
 
 public class ImageRepository : IImageRepository
 {
+    private readonly List<Domain.Images.Image> _images = new();
     public Task<ImageDto> GetByIdAsync(Guid id, CancellationToken cancellationToken)
     {
         return Task.Run(() => new ImageDto
@@ -16,5 +18,13 @@ public class ImageRepository : IImageRepository
             Private = "Public",
             CategoryName = "Android"
         }, cancellationToken);
+    }
+
+    /// <inheritdoc />
+    public Task<Guid> CreateAsync(Domain.Images.Image model, CancellationToken cancellationToken)
+    {
+        model.Id = Guid.NewGuid();
+        _images.Add(model);
+        return Task.Run(() => model.Id);
     }
 }

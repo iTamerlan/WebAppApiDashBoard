@@ -1,11 +1,13 @@
-﻿using Dashboard.Domain.Base;
+﻿using Dashboard.Contracts.Base;
+using Dashboard.Contracts.PublicUser;
+using System.ComponentModel.DataAnnotations;
 
-namespace Dashboard.Domain.Images;
+namespace Dashboard.Contracts.Image;
 
 /// <summary>
-/// Сущность изображения.
+/// Изображение.
 /// </summary>
-public class Image : BaseEntity
+public class CreateImageDto
 {
     /// <summary>
     /// Описание изображения.
@@ -14,15 +16,13 @@ public class Image : BaseEntity
     /// <summary>
     /// Дата загрузки.
     /// </summary>
+    [Range(typeof(DateTime), "01.01.2000", "01.01.2120", ErrorMessage = "Дата от 01.01.2000 до 01.01.2120")]
     public DateTime DateUpload { get; set; }
     /// <summary>
     /// Адрес изображения.
     /// </summary>
+    [Url(ErrorMessage = "Некорректный URL-адрес")]
     public string UrlImage { get; set; }
-    /// <summary>
-    /// Какой пользователь загрузил.
-    /// </summary>
-    public Guid UserId { get; set; }
     /// <summary>
     /// Приватность изображения.
     /// </summary>
@@ -31,5 +31,4 @@ public class Image : BaseEntity
     /// Категория изображений.
     /// </summary>
     public Guid CategoryId { get; set; }
-
 }
