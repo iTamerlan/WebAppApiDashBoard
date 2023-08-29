@@ -1,4 +1,6 @@
+using Dashboard.Application.AppServices.Contexts.Post.Repositories;
 using Dashboard.Application.AppServices.Contexts.Tag.Repositories;
+using Dashboard.Contracts.Post;
 using Dashboard.Contracts.Tag;
 
 namespace Dashboard.Application.AppServices.Contexts.Tag.Services;
@@ -21,5 +23,16 @@ public class TagService : ITagService
     public Task<TagDto> GetByIdAsync(Guid id, CancellationToken cancellationToken)
     {
         return _tagRepository.GetByIdAsync(id, cancellationToken);
+    }
+
+    /// <inheritdoc />
+    public Task<Guid> CreateAsync(CreateTagDto model, CancellationToken cancellationToken)
+    {
+        var post = new Domain.Tags.Tag()
+        {
+            Title = model.Title,
+        };
+
+        return _tagRepository.CreateAsync(post, cancellationToken);
     }
 }

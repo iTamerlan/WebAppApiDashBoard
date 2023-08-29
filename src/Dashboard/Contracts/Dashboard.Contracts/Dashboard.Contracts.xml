@@ -1,0 +1,338 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dashboard.Contracts</name>
+    </assembly>
+    <members>
+        <member name="T:Dashboard.Contracts.Attributes.TagsSizeAttribute">
+            <summary>
+            Валидирует размер массива тегов.
+            </summary>
+        </member>
+        <member name="M:Dashboard.Contracts.Attributes.TagsSizeAttribute.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Валидирует размер массива тегов.
+            </summary>
+            <param name="maxSize">Максимальная длина массива.</param>
+            <param name="minSize">Минимальная длина массива.</param>
+        </member>
+        <member name="M:Dashboard.Contracts.Attributes.TagsSizeAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            Валидирует длину массива по максимальной и минимальной.
+            </summary>
+            <param name="value">Поле для валидации.</param>
+            <param name="validationContext">Контекст валидации.</param>
+            <returns>Результат валидации.</returns>
+        </member>
+        <member name="T:Dashboard.Contracts.Base.BaseDto">
+            <summary>
+            Базовый контракт.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Base.BaseDto.Id">
+            <summary>
+            Идентификатор сущности.
+            </summary>
+        </member>
+        <member name="T:Dashboard.Contracts.Comment.CommentDto">
+            <summary>
+            Комментарий.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Comment.CommentDto.Title">
+            <summary>
+            Заголовок.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Comment.CommentDto.ContentList">
+            <summary>
+            Контент (текст/изображения).
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Comment.CommentDto.Author">
+            <summary>
+            Автор.
+            </summary>
+        </member>
+        <member name="T:Dashboard.Contracts.Comment.CreateCommentDto">
+            <summary>
+            Комментарий.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Comment.CreateCommentDto.Title">
+            <summary>
+            Заголовок.
+            </summary>
+        </member>
+        <member name="T:Dashboard.Contracts.Content.ContentDto">
+            <summary>
+            Блок контента.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Content.ContentDto.Description">
+            <summary>
+            Текстовый блок.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Content.ContentDto.Image">
+            <summary>
+            Изображение (необязательное).
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Content.ContentDto.Number">
+            <summary>
+            Номер по порядку.
+            </summary>
+        </member>
+        <member name="T:Dashboard.Contracts.Content.CreateContentDto">
+            <summary>
+            Блок контента.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Content.CreateContentDto.Description">
+            <summary>
+            Текстовый блок.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Content.CreateContentDto.Number">
+            <summary>
+            Номер по порядку.
+            </summary>
+        </member>
+        <member name="T:Dashboard.Contracts.Image.CreateImageDto">
+            <summary>
+            Изображение.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Image.CreateImageDto.DescriptionImage">
+            <summary>
+            Описание изображения.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Image.CreateImageDto.DateUpload">
+            <summary>
+            Дата загрузки.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Image.CreateImageDto.UrlImage">
+            <summary>
+            Адрес изображения.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Image.CreateImageDto.Private">
+            <summary>
+            Приватность изображения.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Image.CreateImageDto.CategoryId">
+            <summary>
+            Категория изображений.
+            </summary>
+        </member>
+        <member name="T:Dashboard.Contracts.Image.ImageDto">
+            <summary>
+            Изображение.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Image.ImageDto.DescriptionImage">
+            <summary>
+            Описание изображения.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Image.ImageDto.DateUpload">
+            <summary>
+            Дата загрузки.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Image.ImageDto.UrlImage">
+            <summary>
+            Адрес изображения.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Image.ImageDto.UserUpload">
+            <summary>
+            Какой пользователь загрузил.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Image.ImageDto.Private">
+            <summary>
+            Приватность изображения.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Image.ImageDto.CategoryName">
+            <summary>
+            Категория изображений.
+            </summary>
+        </member>
+        <member name="T:Dashboard.Contracts.PostExt.CreatePostExtDto">
+            <summary>
+            Расширенное объявление.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.PostExt.CreatePostExtDto.CategoryId">
+            <summary>
+            Наименование категории.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.PostExt.CreatePostExtDto.Price">
+            <summary>
+            Цена.
+            </summary>
+        </member>
+        <member name="T:Dashboard.Contracts.PostExt.PostExtDto">
+            <summary>
+            Расширенное объявление.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.PostExt.PostExtDto.CategoryName">
+            <summary>
+            Наименование категории.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.PostExt.PostExtDto.Tags">
+            <summary>
+            Список тегов.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.PostExt.PostExtDto.Price">
+            <summary>
+            Цена.
+            </summary>
+        </member>
+        <member name="T:Dashboard.Contracts.Post.CreatePostDto">
+            <summary>
+            Объявление.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Post.CreatePostDto.Title">
+            <summary>
+            Заголовок.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Post.CreatePostDto.Description">
+            <summary>
+            Описание.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Post.CreatePostDto.CategoryId">
+            <summary>
+            Идентификатор категории.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Post.CreatePostDto.TagNames">
+            <summary>
+            Наименование тегов.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Post.CreatePostDto.Price">
+            <summary>
+            Цена.
+            </summary>
+        </member>
+        <member name="T:Dashboard.Contracts.Post.PostDto">
+            <summary>
+            Объявление.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Post.PostDto.Title">
+            <summary>
+            Заголовок.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Post.PostDto.Description">
+            <summary>
+            Описание.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Post.PostDto.CategoryName">
+            <summary>
+            Наименование категории.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Post.PostDto.TagNames">
+            <summary>
+            Наименование тегов.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Post.PostDto.Attachments">
+            <summary>
+            Изображения.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Post.PostDto.Price">
+            <summary>
+            Цена.
+            </summary>
+        </member>
+        <member name="T:Dashboard.Contracts.PublicUser.PublicUserDto">
+            <summary>
+            Публичная информация о пользователе.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.PublicUser.PublicUserDto.UserLogin">
+            <summary>
+            Логин пользователя.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.PublicUser.PublicUserDto.UserDateCreate">
+            <summary>
+            Дата регистрации.
+            </summary>
+        </member>
+        <member name="T:Dashboard.Contracts.Rating.CreateRatingDto">
+            <summary>
+            Рейтинг.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Rating.CreateRatingDto.Rating">
+            <summary>
+            Значение рейтинга.
+            </summary>
+        </member>
+        <member name="T:Dashboard.Contracts.Rating.RatingDto">
+            <summary>
+            Рейтинг.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Rating.RatingDto.Comment">
+            <summary>
+            К какому комментарию.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Rating.RatingDto.Author">
+            <summary>
+            Автор.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Rating.RatingDto.Rating">
+            <summary>
+            Значение рейтинга.
+            </summary>
+        </member>
+        <member name="T:Dashboard.Contracts.Tag.CreateTagDto">
+            <summary>
+            Тэг.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Tag.CreateTagDto.Title">
+            <summary>
+            Название тега.
+            </summary>
+        </member>
+        <member name="T:Dashboard.Contracts.Tag.TagDto">
+            <summary>
+            Тэг.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Tag.TagDto.Title">
+            <summary>
+            Название тега.
+            </summary>
+        </member>
+        <member name="P:Dashboard.Contracts.Tag.TagDto.User">
+            <summary>
+            Тег общий или для конкретного пользователя.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -31,7 +31,7 @@ public class ContentService : IContentService
         var post = new Domain.Contents.BaseContent()
         {
             Description = model.Description,
-            Number = model.Number,
+            PreviousContentId = model.PreviousContentId,
         };
 
         return _contentRepository.CreateAsync(post, cancellationToken);
