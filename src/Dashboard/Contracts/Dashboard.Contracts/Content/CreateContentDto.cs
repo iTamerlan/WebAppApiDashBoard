@@ -17,6 +17,6 @@ public class CreateContentDto
     /// <summary>
     /// Номер по порядку.
     /// </summary>
-    [Range(0, 100, ErrorMessage = "Поле {0} должно быть больше {2} и меньше {1}")]
-    public int Number { get; set; }
+    /* [Range(0, 100, ErrorMessage = "Поле {0} должно быть больше {2} и меньше {1}")] */
+    public Guid PreviousContentId { get; set; }
 }

@@ -5,7 +5,7 @@ using Dashboard.Contracts.PublicUser;
 namespace Dashboard.Contracts.Rating;
 
 /// <summary>
-/// Комментарий.
+/// Рейтинг.
 /// </summary>
 public class RatingDto : BaseDto
 {
