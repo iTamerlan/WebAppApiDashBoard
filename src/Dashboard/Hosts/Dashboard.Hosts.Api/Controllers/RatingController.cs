@@ -56,15 +56,18 @@ public class RatingController : ControllerBase
     {
         return Ok();
     }
-    
+
     /// <summary>
     /// Создает рейтинг.
     /// </summary>
+    /// <param name="dto">Модель для создания рейтинга.</param>
     /// <param name="cancellationToken">Отмена операции.</param>
+    /// <returns>Идентификатор созданной сущности</returns>
     [HttpPost]
-    public async Task<IActionResult> CreateAsync(RatingDto dto, CancellationToken cancellationToken)
+    public async Task<IActionResult> CreateAsync(CreateRatingDto dto, CancellationToken cancellationToken)
     {
-        return Created(string.Empty, null);
+        var modelId = await _ratingService.CreateAsync(dto, cancellationToken);
+        return Created(nameof(CreateAsync), modelId);
     }
     
     /// <summary>

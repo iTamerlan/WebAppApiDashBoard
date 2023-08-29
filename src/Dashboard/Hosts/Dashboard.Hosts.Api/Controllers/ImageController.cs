@@ -56,15 +56,18 @@ public class ImageController : ControllerBase
     {
         return Ok();
     }
-    
+
     /// <summary>
     /// **Загружает** изображение.
     /// </summary>
+    /// <param name="dto">Модель для создания изображения</param>
     /// <param name="cancellationToken">Отмена операции.</param>
+    /// <returns>Идентификатор созданной сущности</returns>
     [HttpPost]
-    public async Task<IActionResult> CreateAsync(ImageDto dto, CancellationToken cancellationToken)
+    public async Task<IActionResult> CreateAsync(CreateImageDto dto, CancellationToken cancellationToken)
     {
-        return Created(string.Empty, null);
+        var modelId = await _imageService.CreateAsync(dto, cancellationToken);
+        return Created(nameof(CreateAsync), modelId);
     }
     
     /// <summary>

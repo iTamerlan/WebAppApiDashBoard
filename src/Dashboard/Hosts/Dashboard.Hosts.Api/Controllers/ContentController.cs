@@ -56,15 +56,18 @@ public class ContentController : ControllerBase
     {
         return Ok();
     }
-    
+
     /// <summary>
     /// Создает блок контента.
     /// </summary>
+    /// <param name="dto">Модель для создания блока контента</param>
     /// <param name="cancellationToken">Отмена операции.</param>
+    /// <returns>Идентификатор созданной сущности</returns>
     [HttpPost]
-    public async Task<IActionResult> CreateAsync(ContentDto dto, CancellationToken cancellationToken)
+    public async Task<IActionResult> CreateAsync(CreateContentDto dto, CancellationToken cancellationToken)
     {
-        return Created(string.Empty, null);
+        var modelId = await _contentService.CreateAsync(dto, cancellationToken);
+        return Created(nameof(CreateAsync), modelId);
     }
     
     /// <summary>
