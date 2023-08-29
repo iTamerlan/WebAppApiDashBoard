@@ -1,6 +1,6 @@
-﻿using Dashboard.Contracts.Attachment;
-using Dashboard.Contracts.Base;
+﻿using Dashboard.Contracts.Base;
 using Dashboard.Contracts.Content;
+using Dashboard.Contracts.PublicUser;
 
 namespace Dashboard.Contracts.Comment;
 

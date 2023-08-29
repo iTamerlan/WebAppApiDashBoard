@@ -1,5 +1,5 @@
 ﻿using Dashboard.Application.AppServices.Contexts.PublicUser.Repositories;
-using Dashboard.Contracts.Attachment;
+using Dashboard.Contracts.PublicUser;
 
 namespace Dashboard.Infrastructure.DataAccess.Contexts.PublicUser.Repositories;
 

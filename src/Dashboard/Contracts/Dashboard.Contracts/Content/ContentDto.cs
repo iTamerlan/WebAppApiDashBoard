@@ -1,6 +1,5 @@
-﻿using Dashboard.Contracts.Attachment;
-using Dashboard.Contracts.Base;
-
+﻿using Dashboard.Contracts.Base;
+using Dashboard.Contracts.Image;
 
 namespace Dashboard.Contracts.Content;
 

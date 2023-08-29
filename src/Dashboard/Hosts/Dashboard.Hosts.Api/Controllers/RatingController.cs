@@ -1,7 +1,7 @@
 ﻿using System.Net;
 using Dashboard.Application.AppServices.Contexts.Post.Services;
 using Dashboard.Application.AppServices.Contexts.Rating.Services;
-using Dashboard.Contracts;
+using Dashboard.Contracts.Rating;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Dashboard.Hosts.Api.Controllers;

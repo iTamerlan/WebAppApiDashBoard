@@ -1,5 +1,5 @@
 using Dashboard.Application.AppServices.Contexts.PostExt.Repositories;
-using Dashboard.Contracts;
+using Dashboard.Contracts.PostExt;
 
 namespace Dashboard.Application.AppServices.Contexts.PostExt.Services;
 

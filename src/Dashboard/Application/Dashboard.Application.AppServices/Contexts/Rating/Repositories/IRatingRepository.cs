@@ -1,4 +1,4 @@
-using Dashboard.Contracts;
+using Dashboard.Contracts.Rating;
 
 namespace Dashboard.Application.AppServices.Contexts.Rating.Repositories;
 

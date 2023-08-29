@@ -1,5 +1,5 @@
 using Dashboard.Application.AppServices.Contexts.Tag.Repositories;
-using Dashboard.Contracts.Attachment;
+using Dashboard.Contracts.Tag;
 
 namespace Dashboard.Application.AppServices.Contexts.Tag.Services;
 
