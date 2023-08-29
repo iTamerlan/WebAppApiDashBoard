@@ -49,6 +49,7 @@ builder.Services.AddSwaggerGen(s =>
     }
 });
 
+
 builder.Services.AddTransient<IPostService, PostService>();
 builder.Services.AddTransient<IPostRepository, PostRepository>();
 
