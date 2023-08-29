@@ -27,7 +27,14 @@ builder.Services.AddSwaggerGen(s =>
         typeof(ImageDto),
         typeof(PublicUserDto),
         typeof(TagDto),
-        typeof(PostController)
+        typeof(PostController),
+        typeof(PublicUserController),
+        typeof(ContentController),
+        typeof(ImageController),
+        typeof(TagController),
+        typeof(CommentController),
+        typeof(RatingController),
+        typeof(PostExtController),
     };
             
     foreach (var marker in includeDocsTypesMarkers)

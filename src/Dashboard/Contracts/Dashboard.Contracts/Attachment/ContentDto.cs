@@ -10,11 +10,11 @@ namespace Dashboard.Contracts.Attachment;
 public class ContentDto: BaseDto
 {
     /// <summary>
-    /// Описание.
+    /// Текстовый блок.
     /// </summary>
     public string Description { get; set; }
     /// <summary>
-    /// Изображение.
+    /// Изображение (необязательное).
     /// </summary>
     public IReadOnlyCollection<ImageDto> Image { get; set; }
     /// <summary>

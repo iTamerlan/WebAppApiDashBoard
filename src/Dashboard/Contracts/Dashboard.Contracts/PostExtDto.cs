@@ -4,7 +4,7 @@ using Dashboard.Contracts.Base;
 namespace Dashboard.Contracts;
 
 /// <summary>
-/// Объявление.
+/// Расширенное объявление.
 /// </summary>
 public class PostExtDto : CommentDto
 {
