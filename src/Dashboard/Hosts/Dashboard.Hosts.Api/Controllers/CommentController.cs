@@ -1,7 +1,7 @@
 ﻿using System.Net;
+using Dashboard.Application.AppServices.Contexts.Comment.Services;
 using Dashboard.Application.AppServices.Contexts.Post.Services;
-using Dashboard.Application.AppServices.Contexts.Services;
-using Dashboard.Contracts;
+using Dashboard.Contracts.Comment;
 using Dashboard.Contracts.Post;
 using Microsoft.AspNetCore.Mvc;
 

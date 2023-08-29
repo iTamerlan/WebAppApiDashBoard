@@ -1,5 +1,6 @@
 ﻿using Dashboard.Contracts.Attachment;
 using Dashboard.Contracts.Base;
+using Dashboard.Contracts.Comment;
 
 namespace Dashboard.Contracts;
 

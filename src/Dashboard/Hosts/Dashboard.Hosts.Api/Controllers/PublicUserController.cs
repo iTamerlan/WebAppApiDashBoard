@@ -1,6 +1,6 @@
 ﻿using System.Net;
 using Dashboard.Application.AppServices.Contexts.Post.Services;
-using Dashboard.Application.AppServices.Contexts.Services;
+using Dashboard.Application.AppServices.Contexts.PublicUser.Services;
 using Dashboard.Contracts.Attachment;
 using Microsoft.AspNetCore.Mvc;
 
