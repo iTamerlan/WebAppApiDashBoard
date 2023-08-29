@@ -94,7 +94,7 @@
             Текстовый блок.
             </summary>
         </member>
-        <member name="P:Dashboard.Contracts.Content.CreateContentDto.Number">
+        <member name="P:Dashboard.Contracts.Content.CreateContentDto.PreviousContentId">
             <summary>
             Номер по порядку.
             </summary>

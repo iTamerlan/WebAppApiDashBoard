@@ -9,7 +9,7 @@
             Контроллер для работы с комментариями.
             </summary>
         </member>
-        <member name="M:Dashboard.Hosts.Api.Controllers.CommentController.#ctor(Dashboard.Application.AppServices.Contexts.Services.ICommentService)">
+        <member name="M:Dashboard.Hosts.Api.Controllers.CommentController.#ctor(Dashboard.Application.AppServices.Contexts.Comment.Services.ICommentService)">
             <summary>
             Инициализирует экзепляр <see cref="T:Dashboard.Hosts.Api.Controllers.CommentController"/>
             </summary>
@@ -36,13 +36,13 @@
             <param name="pageIndex">Номер страницы.</param>
             <returns>Коллекция комментариев <see cref="T:Dashboard.Contracts.Post.PostDto"/></returns>
         </member>
-        <member name="M:Dashboard.Hosts.Api.Controllers.CommentController.CreateAsync(Dashboard.Contracts.CommentDto,System.Threading.CancellationToken)">
+        <member name="M:Dashboard.Hosts.Api.Controllers.CommentController.CreateAsync(Dashboard.Contracts.Comment.CommentDto,System.Threading.CancellationToken)">
             <summary>
             Создает комментарий.
             </summary>
             <param name="cancellationToken">Отмена операции.</param>
         </member>
-        <member name="M:Dashboard.Hosts.Api.Controllers.CommentController.UpdateAsync(Dashboard.Contracts.CommentDto,System.Threading.CancellationToken)">
+        <member name="M:Dashboard.Hosts.Api.Controllers.CommentController.UpdateAsync(Dashboard.Contracts.Comment.CommentDto,System.Threading.CancellationToken)">
             <summary>
             Редактирует комментарий.
             </summary>
@@ -60,7 +60,7 @@
             Контроллер для работы с блоками контента.
             </summary>
         </member>
-        <member name="M:Dashboard.Hosts.Api.Controllers.ContentController.#ctor(Dashboard.Application.AppServices.Contexts.Services.IContentService)">
+        <member name="M:Dashboard.Hosts.Api.Controllers.ContentController.#ctor(Dashboard.Application.AppServices.Contexts.Content.Services.IContentService)">
             <summary>
             Инициализирует экзепляр <see cref="!:contentController"/>
             </summary>
@@ -76,7 +76,7 @@
             </remarks>
             <param name="id">Идентификатор блока контента.</param>
             <param name="cancellationToken">Отмена операции.</param>
-            <returns>Модель блока контента <see cref="T:Dashboard.Contracts.Attachment.ContentDto"/></returns>
+            <returns>Модель блока контента <see cref="T:Dashboard.Contracts.Content.ContentDto"/></returns>
         </member>
         <member name="M:Dashboard.Hosts.Api.Controllers.ContentController.GetAllAsync(System.Threading.CancellationToken,System.Int32,System.Int32)">
             <summary>
@@ -85,15 +85,15 @@
             <param name="cancellationToken">Отмена операции.</param>
             <param name="pageSize">Размер страницы.</param>
             <param name="pageIndex">Номер страницы.</param>
-            <returns>Коллекция блоков контента <see cref="T:Dashboard.Contracts.Attachment.ContentDto"/></returns>
+            <returns>Коллекция блоков контента <see cref="T:Dashboard.Contracts.Content.ContentDto"/></returns>
         </member>
-        <member name="M:Dashboard.Hosts.Api.Controllers.ContentController.CreateAsync(Dashboard.Contracts.Attachment.ContentDto,System.Threading.CancellationToken)">
+        <member name="M:Dashboard.Hosts.Api.Controllers.ContentController.CreateAsync(Dashboard.Contracts.Content.ContentDto,System.Threading.CancellationToken)">
             <summary>
             Создает блок контента.
             </summary>
             <param name="cancellationToken">Отмена операции.</param>
         </member>
-        <member name="M:Dashboard.Hosts.Api.Controllers.ContentController.UpdateAsync(Dashboard.Contracts.Attachment.ContentDto,System.Threading.CancellationToken)">
+        <member name="M:Dashboard.Hosts.Api.Controllers.ContentController.UpdateAsync(Dashboard.Contracts.Content.ContentDto,System.Threading.CancellationToken)">
             <summary>
             Редактирует блока контента.
             </summary>
@@ -111,7 +111,7 @@
             Контроллер для работы с изображениями.
             </summary>
         </member>
-        <member name="M:Dashboard.Hosts.Api.Controllers.ImageController.#ctor(Dashboard.Application.AppServices.Contexts.Services.IImageService)">
+        <member name="M:Dashboard.Hosts.Api.Controllers.ImageController.#ctor(Dashboard.Application.AppServices.Contexts.Image.Services.IImageService)">
             <summary>
             Инициализирует экзепляр <see cref="T:Dashboard.Hosts.Api.Controllers.ImageController"/>
             </summary>
@@ -127,7 +127,7 @@
             </remarks>
             <param name="id">Идентификатор изображения.</param>
             <param name="cancellationToken">Отмена операции.</param>
-            <returns>Модель объявления <see cref="T:Dashboard.Contracts.Attachment.ImageDto"/></returns>
+            <returns>Модель объявления <see cref="T:Dashboard.Contracts.Image.ImageDto"/></returns>
         </member>
         <member name="M:Dashboard.Hosts.Api.Controllers.ImageController.GetAllAsync(System.Threading.CancellationToken,System.Int32,System.Int32)">
             <summary>
@@ -136,15 +136,15 @@
             <param name="cancellationToken">Отмена операции.</param>
             <param name="pageSize">Размер страницы.</param>
             <param name="pageIndex">Номер страницы.</param>
-            <returns>Коллекция изображений <see cref="T:Dashboard.Contracts.Attachment.ImageDto"/></returns>
+            <returns>Коллекция изображений <see cref="T:Dashboard.Contracts.Image.ImageDto"/></returns>
         </member>
-        <member name="M:Dashboard.Hosts.Api.Controllers.ImageController.CreateAsync(Dashboard.Contracts.Attachment.ImageDto,System.Threading.CancellationToken)">
+        <member name="M:Dashboard.Hosts.Api.Controllers.ImageController.CreateAsync(Dashboard.Contracts.Image.ImageDto,System.Threading.CancellationToken)">
             <summary>
             **Загружает** изображение.
             </summary>
             <param name="cancellationToken">Отмена операции.</param>
         </member>
-        <member name="M:Dashboard.Hosts.Api.Controllers.ImageController.UpdateAsync(Dashboard.Contracts.Attachment.ImageDto,System.Threading.CancellationToken)">
+        <member name="M:Dashboard.Hosts.Api.Controllers.ImageController.UpdateAsync(Dashboard.Contracts.Image.ImageDto,System.Threading.CancellationToken)">
             <summary>
             Заменяет изображение (редактирование).
             </summary>
@@ -215,7 +215,7 @@
             Контроллер для работы с расширенными объявлениями.
             </summary>
         </member>
-        <member name="M:Dashboard.Hosts.Api.Controllers.PostExtController.#ctor(Dashboard.Application.AppServices.Contexts.Services.IPostExtService)">
+        <member name="M:Dashboard.Hosts.Api.Controllers.PostExtController.#ctor(Dashboard.Application.AppServices.Contexts.PostExt.Services.IPostExtService)">
             <summary>
             Инициализирует экзепляр <see cref="T:Dashboard.Hosts.Api.Controllers.PostExtController"/>
             </summary>
@@ -231,7 +231,7 @@
             </remarks>
             <param name="id">Идентификатор расширенного объявления.</param>
             <param name="cancellationToken">Отмена операции.</param>
-            <returns>Модель расширенного объявления <see cref="T:Dashboard.Contracts.PostExtDto"/></returns>
+            <returns>Модель расширенного объявления <see cref="T:Dashboard.Contracts.PostExt.PostExtDto"/></returns>
         </member>
         <member name="M:Dashboard.Hosts.Api.Controllers.PostExtController.GetAllAsync(System.Threading.CancellationToken,System.Int32,System.Int32)">
             <summary>
@@ -240,15 +240,15 @@
             <param name="cancellationToken">Отмена операции.</param>
             <param name="pageSize">Размер страницы.</param>
             <param name="pageIndex">Номер страницы.</param>
-            <returns>Коллекция расширенных объявлений <see cref="T:Dashboard.Contracts.PostExtDto"/></returns>
+            <returns>Коллекция расширенных объявлений <see cref="T:Dashboard.Contracts.PostExt.PostExtDto"/></returns>
         </member>
-        <member name="M:Dashboard.Hosts.Api.Controllers.PostExtController.CreateAsync(Dashboard.Contracts.PostExtDto,System.Threading.CancellationToken)">
+        <member name="M:Dashboard.Hosts.Api.Controllers.PostExtController.CreateAsync(Dashboard.Contracts.PostExt.PostExtDto,System.Threading.CancellationToken)">
             <summary>
             Создает расширенное объявление.
             </summary>
             <param name="cancellationToken">Отмена операции.</param>
         </member>
-        <member name="M:Dashboard.Hosts.Api.Controllers.PostExtController.UpdateAsync(Dashboard.Contracts.PostExtDto,System.Threading.CancellationToken)">
+        <member name="M:Dashboard.Hosts.Api.Controllers.PostExtController.UpdateAsync(Dashboard.Contracts.PostExt.PostExtDto,System.Threading.CancellationToken)">
             <summary>
             Редактирует расширенное объявление.
             </summary>
@@ -266,7 +266,7 @@
             Контроллер для отображения публичной информации о пользователе.
             </summary>
         </member>
-        <member name="M:Dashboard.Hosts.Api.Controllers.PublicUserController.#ctor(Dashboard.Application.AppServices.Contexts.Services.IPublicUserService)">
+        <member name="M:Dashboard.Hosts.Api.Controllers.PublicUserController.#ctor(Dashboard.Application.AppServices.Contexts.PublicUser.Services.IPublicUserService)">
             <summary>
             Инициализирует экзепляр <see cref="T:Dashboard.Hosts.Api.Controllers.PublicUserController"/>
             </summary>
@@ -282,7 +282,7 @@
             </remarks>
             <param name="id">Идентификатор пользователя.</param>
             <param name="cancellationToken">Отмена операции.</param>
-            <returns>Модель публичной информации о пользователе <see cref="T:Dashboard.Contracts.Attachment.PublicUserDto"/></returns>
+            <returns>Модель публичной информации о пользователе <see cref="T:Dashboard.Contracts.PublicUser.PublicUserDto"/></returns>
         </member>
         <member name="M:Dashboard.Hosts.Api.Controllers.PublicUserController.GetAllAsync(System.Threading.CancellationToken,System.Int32,System.Int32)">
             <summary>
@@ -291,14 +291,14 @@
             <param name="cancellationToken">Отмена операции.</param>
             <param name="pageSize">Размер страницы.</param>
             <param name="pageIndex">Номер страницы.</param>
-            <returns>Коллекция пользователей <see cref="T:Dashboard.Contracts.Attachment.PublicUserDto"/></returns>
+            <returns>Коллекция пользователей <see cref="T:Dashboard.Contracts.PublicUser.PublicUserDto"/></returns>
         </member>
         <member name="T:Dashboard.Hosts.Api.Controllers.RatingController">
             <summary>
             Контроллер для работы с рейтингом.
             </summary>
         </member>
-        <member name="M:Dashboard.Hosts.Api.Controllers.RatingController.#ctor(Dashboard.Application.AppServices.Contexts.Services.IRatingService)">
+        <member name="M:Dashboard.Hosts.Api.Controllers.RatingController.#ctor(Dashboard.Application.AppServices.Contexts.Rating.Services.IRatingService)">
             <summary>
             Инициализирует экзепляр <see cref="T:Dashboard.Hosts.Api.Controllers.RatingController"/>
             </summary>
@@ -314,7 +314,7 @@
             </remarks>
             <param name="id">Идентификатор рейтинга.</param>
             <param name="cancellationToken">Отмена операции.</param>
-            <returns>Модель рейтинга <see cref="T:Dashboard.Contracts.RatingDto"/></returns>
+            <returns>Модель рейтинга <see cref="T:Dashboard.Contracts.Rating.RatingDto"/></returns>
         </member>
         <member name="M:Dashboard.Hosts.Api.Controllers.RatingController.GetAllAsync(System.Threading.CancellationToken,System.Int32,System.Int32)">
             <summary>
@@ -323,15 +323,15 @@
             <param name="cancellationToken">Отмена операции.</param>
             <param name="pageSize">Размер страницы.</param>
             <param name="pageIndex">Номер страницы.</param>
-            <returns>Коллекция рейтингов <see cref="T:Dashboard.Contracts.RatingDto"/></returns>
+            <returns>Коллекция рейтингов <see cref="T:Dashboard.Contracts.Rating.RatingDto"/></returns>
         </member>
-        <member name="M:Dashboard.Hosts.Api.Controllers.RatingController.CreateAsync(Dashboard.Contracts.RatingDto,System.Threading.CancellationToken)">
+        <member name="M:Dashboard.Hosts.Api.Controllers.RatingController.CreateAsync(Dashboard.Contracts.Rating.RatingDto,System.Threading.CancellationToken)">
             <summary>
             Создает рейтинг.
             </summary>
             <param name="cancellationToken">Отмена операции.</param>
         </member>
-        <member name="M:Dashboard.Hosts.Api.Controllers.RatingController.UpdateAsync(Dashboard.Contracts.RatingDto,System.Threading.CancellationToken)">
+        <member name="M:Dashboard.Hosts.Api.Controllers.RatingController.UpdateAsync(Dashboard.Contracts.Rating.RatingDto,System.Threading.CancellationToken)">
             <summary>
             Редактирует рейтинг.
             </summary>
@@ -349,7 +349,7 @@
             Контроллер для работы с тегами.
             </summary>
         </member>
-        <member name="M:Dashboard.Hosts.Api.Controllers.TagController.#ctor(Dashboard.Application.AppServices.Contexts.Services.ITagService)">
+        <member name="M:Dashboard.Hosts.Api.Controllers.TagController.#ctor(Dashboard.Application.AppServices.Contexts.Tag.Services.ITagService)">
             <summary>
             Инициализирует экзепляр <see cref="T:Dashboard.Hosts.Api.Controllers.TagController"/>
             </summary>
@@ -365,7 +365,7 @@
             </remarks>
             <param name="id">Идентификатор тега.</param>
             <param name="cancellationToken">Отмена операции.</param>
-            <returns>Модель тега <see cref="T:Dashboard.Contracts.Attachment.TagDto"/></returns>
+            <returns>Модель тега <see cref="T:Dashboard.Contracts.Tag.TagDto"/></returns>
         </member>
         <member name="M:Dashboard.Hosts.Api.Controllers.TagController.GetAllAsync(System.Threading.CancellationToken,System.Int32,System.Int32)">
             <summary>
@@ -374,15 +374,15 @@
             <param name="cancellationToken">Отмена операции.</param>
             <param name="pageSize">Размер страницы.</param>
             <param name="pageIndex">Номер страницы.</param>
-            <returns>Коллекция тегов <see cref="T:Dashboard.Contracts.Attachment.TagDto"/></returns>
+            <returns>Коллекция тегов <see cref="T:Dashboard.Contracts.Tag.TagDto"/></returns>
         </member>
-        <member name="M:Dashboard.Hosts.Api.Controllers.TagController.CreateAsync(Dashboard.Contracts.Attachment.TagDto,System.Threading.CancellationToken)">
+        <member name="M:Dashboard.Hosts.Api.Controllers.TagController.CreateAsync(Dashboard.Contracts.Tag.TagDto,System.Threading.CancellationToken)">
             <summary>
             Создает тег.
             </summary>
             <param name="cancellationToken">Отмена операции.</param>
         </member>
-        <member name="M:Dashboard.Hosts.Api.Controllers.TagController.UpdateAsync(Dashboard.Contracts.Attachment.TagDto,System.Threading.CancellationToken)">
+        <member name="M:Dashboard.Hosts.Api.Controllers.TagController.UpdateAsync(Dashboard.Contracts.Tag.TagDto,System.Threading.CancellationToken)">
             <summary>
             Редактирует тег.
             </summary>
