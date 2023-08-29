@@ -36,11 +36,13 @@
             <param name="pageIndex">Номер страницы.</param>
             <returns>Коллекция комментариев <see cref="T:Dashboard.Contracts.Post.PostDto"/></returns>
         </member>
-        <member name="M:Dashboard.Hosts.Api.Controllers.CommentController.CreateAsync(Dashboard.Contracts.Comment.CommentDto,System.Threading.CancellationToken)">
+        <member name="M:Dashboard.Hosts.Api.Controllers.CommentController.CreateAsync(Dashboard.Contracts.Comment.CreateCommentDto,System.Threading.CancellationToken)">
             <summary>
             Создает комментарий.
             </summary>
+            <param name="dto">Модель для создания комментария</param>
             <param name="cancellationToken">Отмена операции.</param>
+            <returns>Идентификатор созданной сущности</returns>
         </member>
         <member name="M:Dashboard.Hosts.Api.Controllers.CommentController.UpdateAsync(Dashboard.Contracts.Comment.CommentDto,System.Threading.CancellationToken)">
             <summary>
@@ -87,11 +89,13 @@
             <param name="pageIndex">Номер страницы.</param>
             <returns>Коллекция блоков контента <see cref="T:Dashboard.Contracts.Content.ContentDto"/></returns>
         </member>
-        <member name="M:Dashboard.Hosts.Api.Controllers.ContentController.CreateAsync(Dashboard.Contracts.Content.ContentDto,System.Threading.CancellationToken)">
+        <member name="M:Dashboard.Hosts.Api.Controllers.ContentController.CreateAsync(Dashboard.Contracts.Content.CreateContentDto,System.Threading.CancellationToken)">
             <summary>
             Создает блок контента.
             </summary>
+            <param name="dto">Модель для создания блока контента</param>
             <param name="cancellationToken">Отмена операции.</param>
+            <returns>Идентификатор созданной сущности</returns>
         </member>
         <member name="M:Dashboard.Hosts.Api.Controllers.ContentController.UpdateAsync(Dashboard.Contracts.Content.ContentDto,System.Threading.CancellationToken)">
             <summary>
@@ -138,11 +142,13 @@
             <param name="pageIndex">Номер страницы.</param>
             <returns>Коллекция изображений <see cref="T:Dashboard.Contracts.Image.ImageDto"/></returns>
         </member>
-        <member name="M:Dashboard.Hosts.Api.Controllers.ImageController.CreateAsync(Dashboard.Contracts.Image.ImageDto,System.Threading.CancellationToken)">
+        <member name="M:Dashboard.Hosts.Api.Controllers.ImageController.CreateAsync(Dashboard.Contracts.Image.CreateImageDto,System.Threading.CancellationToken)">
             <summary>
             **Загружает** изображение.
             </summary>
+            <param name="dto">Модель для создания изображения</param>
             <param name="cancellationToken">Отмена операции.</param>
+            <returns>Идентификатор созданной сущности</returns>
         </member>
         <member name="M:Dashboard.Hosts.Api.Controllers.ImageController.UpdateAsync(Dashboard.Contracts.Image.ImageDto,System.Threading.CancellationToken)">
             <summary>
@@ -242,11 +248,13 @@
             <param name="pageIndex">Номер страницы.</param>
             <returns>Коллекция расширенных объявлений <see cref="T:Dashboard.Contracts.PostExt.PostExtDto"/></returns>
         </member>
-        <member name="M:Dashboard.Hosts.Api.Controllers.PostExtController.CreateAsync(Dashboard.Contracts.PostExt.PostExtDto,System.Threading.CancellationToken)">
+        <member name="M:Dashboard.Hosts.Api.Controllers.PostExtController.CreateAsync(Dashboard.Contracts.PostExt.CreatePostExtDto,System.Threading.CancellationToken)">
             <summary>
             Создает расширенное объявление.
             </summary>
+            <param name="dto">Модель для создания расширенного объявления</param>
             <param name="cancellationToken">Отмена операции.</param>
+            <returns>Идентификатор созданной сущности</returns>
         </member>
         <member name="M:Dashboard.Hosts.Api.Controllers.PostExtController.UpdateAsync(Dashboard.Contracts.PostExt.PostExtDto,System.Threading.CancellationToken)">
             <summary>
@@ -325,11 +333,13 @@
             <param name="pageIndex">Номер страницы.</param>
             <returns>Коллекция рейтингов <see cref="T:Dashboard.Contracts.Rating.RatingDto"/></returns>
         </member>
-        <member name="M:Dashboard.Hosts.Api.Controllers.RatingController.CreateAsync(Dashboard.Contracts.Rating.RatingDto,System.Threading.CancellationToken)">
+        <member name="M:Dashboard.Hosts.Api.Controllers.RatingController.CreateAsync(Dashboard.Contracts.Rating.CreateRatingDto,System.Threading.CancellationToken)">
             <summary>
             Создает рейтинг.
             </summary>
+            <param name="dto">Модель для создания рейтинга.</param>
             <param name="cancellationToken">Отмена операции.</param>
+            <returns>Идентификатор созданной сущности</returns>
         </member>
         <member name="M:Dashboard.Hosts.Api.Controllers.RatingController.UpdateAsync(Dashboard.Contracts.Rating.RatingDto,System.Threading.CancellationToken)">
             <summary>
@@ -376,11 +386,13 @@
             <param name="pageIndex">Номер страницы.</param>
             <returns>Коллекция тегов <see cref="T:Dashboard.Contracts.Tag.TagDto"/></returns>
         </member>
-        <member name="M:Dashboard.Hosts.Api.Controllers.TagController.CreateAsync(Dashboard.Contracts.Tag.TagDto,System.Threading.CancellationToken)">
+        <member name="M:Dashboard.Hosts.Api.Controllers.TagController.CreateAsync(Dashboard.Contracts.Tag.CreateTagDto,System.Threading.CancellationToken)">
             <summary>
             Создает тег.
             </summary>
+            <param name="dto">Модель для создания тега</param>
             <param name="cancellationToken">Отмена операции.</param>
+            <returns>Идентификатор созданной сущности</returns>
         </member>
         <member name="M:Dashboard.Hosts.Api.Controllers.TagController.UpdateAsync(Dashboard.Contracts.Tag.TagDto,System.Threading.CancellationToken)">
             <summary>

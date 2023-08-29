@@ -57,15 +57,18 @@ public class CommentController : ControllerBase
     {
         return Ok();
     }
-    
+
     /// <summary>
     /// Создает комментарий.
     /// </summary>
+    /// <param name="dto">Модель для создания комментария</param>
     /// <param name="cancellationToken">Отмена операции.</param>
+    /// <returns>Идентификатор созданной сущности</returns>
     [HttpPost]
-    public async Task<IActionResult> CreateAsync(CommentDto dto, CancellationToken cancellationToken)
+    public async Task<IActionResult> CreateAsync(CreateCommentDto dto, CancellationToken cancellationToken)
     {
-        return Created(string.Empty, null);
+        var modelId = await _commentService.CreateAsync(dto, cancellationToken);
+        return Created(nameof(CreateAsync), modelId);
     }
     
     /// <summary>

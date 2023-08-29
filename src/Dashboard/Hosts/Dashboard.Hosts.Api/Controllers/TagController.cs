@@ -56,15 +56,18 @@ public class TagController : ControllerBase
     {
         return Ok();
     }
-    
+
     /// <summary>
     /// Создает тег.
     /// </summary>
+    /// <param name="dto">Модель для создания тега</param>
     /// <param name="cancellationToken">Отмена операции.</param>
+    /// <returns>Идентификатор созданной сущности</returns>
     [HttpPost]
-    public async Task<IActionResult> CreateAsync(TagDto dto, CancellationToken cancellationToken)
+    public async Task<IActionResult> CreateAsync(CreateTagDto dto, CancellationToken cancellationToken)
     {
-        return Created(string.Empty, null);
+        var modelId = await _tagService.CreateAsync(dto, cancellationToken);
+        return Created(nameof(CreateAsync), modelId);
     }
     
     /// <summary>

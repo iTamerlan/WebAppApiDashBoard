@@ -56,15 +56,18 @@ public class PostExtController : ControllerBase
     {
         return Ok();
     }
-    
+
     /// <summary>
     /// Создает расширенное объявление.
     /// </summary>
+    /// <param name="dto">Модель для создания расширенного объявления</param>
     /// <param name="cancellationToken">Отмена операции.</param>
+    /// <returns>Идентификатор созданной сущности</returns>
     [HttpPost]
-    public async Task<IActionResult> CreateAsync(PostExtDto dto, CancellationToken cancellationToken)
+    public async Task<IActionResult> CreateAsync(CreatePostExtDto dto, CancellationToken cancellationToken)
     {
-        return Created(string.Empty, null);
+        var modelId = await _postExtService.CreateAsync(dto, cancellationToken);
+        return Created(nameof(CreateAsync), modelId);
     }
     
     /// <summary>
