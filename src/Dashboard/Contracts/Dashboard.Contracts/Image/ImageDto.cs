@@ -1,5 +1,6 @@
 ﻿using Dashboard.Contracts.Base;
 using Dashboard.Contracts.PublicUser;
+using System.ComponentModel.DataAnnotations;
 
 namespace Dashboard.Contracts.Image;
 

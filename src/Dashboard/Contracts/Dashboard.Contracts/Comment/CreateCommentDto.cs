@@ -8,7 +8,7 @@ namespace Dashboard.Contracts.Comment;
 /// <summary>
 /// Комментарий.
 /// </summary>
-public class CreateCommentDto : BaseDto
+public class CreateCommentDto
 {
     /// <summary>
     /// Заголовок.
