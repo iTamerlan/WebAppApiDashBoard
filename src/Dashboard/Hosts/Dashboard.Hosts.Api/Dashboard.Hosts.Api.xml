@@ -1,0 +1,397 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dashboard.Hosts.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Dashboard.Hosts.Api.Controllers.CommentController">
+            <summary>
+            Контроллер для работы с комментариями.
+            </summary>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.CommentController.#ctor(Dashboard.Application.AppServices.Contexts.Services.ICommentService)">
+            <summary>
+            Инициализирует экзепляр <see cref="T:Dashboard.Hosts.Api.Controllers.CommentController"/>
+            </summary>
+            <param name="commentService">Сервис работы с комментариями.</param>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.CommentController.GetByIdAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Возвращает комментарий по идентификатору.
+            </summary>
+            <remarks>
+            Пример:
+            curl -XGET http://host:port/сomment/get-by-id
+            </remarks>
+            <param name="id">Идентификатор комментария.</param>
+            <param name="cancellationToken">Отмена операции.</param>
+            <returns>Модель объявления <see cref="T:Dashboard.Contracts.PostDto"/></returns>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.CommentController.GetAllAsync(System.Threading.CancellationToken,System.Int32,System.Int32)">
+            <summary>
+            Возвращает постраничные комментарии.
+            </summary>
+            <param name="cancellationToken">Отмена операции.</param>
+            <param name="pageSize">Размер страницы.</param>
+            <param name="pageIndex">Номер страницы.</param>
+            <returns>Коллекция комментариев <see cref="T:Dashboard.Contracts.PostDto"/></returns>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.CommentController.CreateAsync(Dashboard.Contracts.CommentDto,System.Threading.CancellationToken)">
+            <summary>
+            Создает комментарий.
+            </summary>
+            <param name="cancellationToken">Отмена операции.</param>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.CommentController.UpdateAsync(Dashboard.Contracts.CommentDto,System.Threading.CancellationToken)">
+            <summary>
+            Редактирует комментарий.
+            </summary>
+            <param name="cancellationToken">Отмена операции.</param>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.CommentController.DeleteAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Удаляем комментарий по идентификатору.
+            </summary>
+            <param name="id">Идентификатор комментария.</param>
+            <param name="cancellationToken">Отмена операции.</param>
+        </member>
+        <member name="T:Dashboard.Hosts.Api.Controllers.ContentController">
+            <summary>
+            Контроллер для работы с блоками контента.
+            </summary>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.ContentController.#ctor(Dashboard.Application.AppServices.Contexts.Services.IContentService)">
+            <summary>
+            Инициализирует экзепляр <see cref="!:contentController"/>
+            </summary>
+            <param name="contentService">Сервис работы с блоками контента.</param>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.ContentController.GetByIdAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Возвращает блок контента по идентификатору.
+            </summary>
+            <remarks>
+            Пример:
+            curl -XGET http://host:port/content/get-by-id
+            </remarks>
+            <param name="id">Идентификатор блока контента.</param>
+            <param name="cancellationToken">Отмена операции.</param>
+            <returns>Модель блока контента <see cref="T:Dashboard.Contracts.Attachment.ContentDto"/></returns>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.ContentController.GetAllAsync(System.Threading.CancellationToken,System.Int32,System.Int32)">
+            <summary>
+            Возвращает постраничные блоки контента.
+            </summary>
+            <param name="cancellationToken">Отмена операции.</param>
+            <param name="pageSize">Размер страницы.</param>
+            <param name="pageIndex">Номер страницы.</param>
+            <returns>Коллекция блоков контента <see cref="T:Dashboard.Contracts.Attachment.ContentDto"/></returns>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.ContentController.CreateAsync(Dashboard.Contracts.Attachment.ContentDto,System.Threading.CancellationToken)">
+            <summary>
+            Создает блок контента.
+            </summary>
+            <param name="cancellationToken">Отмена операции.</param>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.ContentController.UpdateAsync(Dashboard.Contracts.Attachment.ContentDto,System.Threading.CancellationToken)">
+            <summary>
+            Редактирует блока контента.
+            </summary>
+            <param name="cancellationToken">Отмена операции.</param>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.ContentController.DeleteAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Удаляем блок контента по идентификатору.
+            </summary>
+            <param name="id">Идентификатор блока контента.</param>
+            <param name="cancellationToken">Отмена операции.</param>
+        </member>
+        <member name="T:Dashboard.Hosts.Api.Controllers.ImageController">
+            <summary>
+            Контроллер для работы с изображениями.
+            </summary>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.ImageController.#ctor(Dashboard.Application.AppServices.Contexts.Services.IImageService)">
+            <summary>
+            Инициализирует экзепляр <see cref="T:Dashboard.Hosts.Api.Controllers.ImageController"/>
+            </summary>
+            <param name="imageService">Сервис работы с изображениями.</param>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.ImageController.GetByIdAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Возвращает изображение по идентификатору.
+            </summary>
+            <remarks>
+            Пример:
+            curl -XGET http://host:port/image/get-by-id
+            </remarks>
+            <param name="id">Идентификатор изображения.</param>
+            <param name="cancellationToken">Отмена операции.</param>
+            <returns>Модель объявления <see cref="T:Dashboard.Contracts.Attachment.ImageDto"/></returns>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.ImageController.GetAllAsync(System.Threading.CancellationToken,System.Int32,System.Int32)">
+            <summary>
+            Возвращает постраничные изображения.
+            </summary>
+            <param name="cancellationToken">Отмена операции.</param>
+            <param name="pageSize">Размер страницы.</param>
+            <param name="pageIndex">Номер страницы.</param>
+            <returns>Коллекция изображений <see cref="T:Dashboard.Contracts.Attachment.ImageDto"/></returns>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.ImageController.CreateAsync(Dashboard.Contracts.Attachment.ImageDto,System.Threading.CancellationToken)">
+            <summary>
+            **Загружает** изображение.
+            </summary>
+            <param name="cancellationToken">Отмена операции.</param>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.ImageController.UpdateAsync(Dashboard.Contracts.Attachment.ImageDto,System.Threading.CancellationToken)">
+            <summary>
+            Заменяет изображение (редактирование).
+            </summary>
+            <param name="cancellationToken">Отмена операции.</param>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.ImageController.DeleteAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Удаляем изображение по идентификатору.
+            </summary>
+            <param name="id">Идентификатор изображения.</param>
+            <param name="cancellationToken">Отмена операции.</param>
+        </member>
+        <member name="T:Dashboard.Hosts.Api.Controllers.PostController">
+            <summary>
+            Контроллер для работы с объявлениями.
+            </summary>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.PostController.#ctor(Dashboard.Application.AppServices.Contexts.Post.Services.IPostService)">
+            <summary>
+            Инициализирует экзепляр <see cref="T:Dashboard.Hosts.Api.Controllers.PostController"/>
+            </summary>
+            <param name="postService">Сервис работы с объявлениями.</param>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.PostController.GetByIdAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Возвращает объявление по идентификатору.
+            </summary>
+            <remarks>
+            Пример:
+            curl -XGET http://host:port/post/get-by-id
+            </remarks>
+            <param name="id">Идентификатор объявления.</param>
+            <param name="cancellationToken">Отмена операции.</param>
+            <returns>Модель объявления <see cref="T:Dashboard.Contracts.PostDto"/></returns>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.PostController.GetAllAsync(System.Threading.CancellationToken,System.Int32,System.Int32)">
+            <summary>
+            Возвращает постраничные объявления.
+            </summary>
+            <param name="cancellationToken">Отмена операции.</param>
+            <param name="pageSize">Размер страницы.</param>
+            <param name="pageIndex">Номер страницы.</param>
+            <returns>Коллекция объявлений <see cref="T:Dashboard.Contracts.PostDto"/></returns>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.PostController.CreateAsync(Dashboard.Contracts.PostDto,System.Threading.CancellationToken)">
+            <summary>
+            Создает объявление.
+            </summary>
+            <param name="cancellationToken">Отмена операции.</param>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.PostController.UpdateAsync(Dashboard.Contracts.PostDto,System.Threading.CancellationToken)">
+            <summary>
+            Редактирует объявление.
+            </summary>
+            <param name="cancellationToken">Отмена операции.</param>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.PostController.DeleteAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Удаляем объявление по идентификатору.
+            </summary>
+            <param name="id">Идентификатор объявления.</param>
+            <param name="cancellationToken">Отмена операции.</param>
+        </member>
+        <member name="T:Dashboard.Hosts.Api.Controllers.PostExtController">
+            <summary>
+            Контроллер для работы с расширенными объявлениями.
+            </summary>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.PostExtController.#ctor(Dashboard.Application.AppServices.Contexts.Services.IPostExtService)">
+            <summary>
+            Инициализирует экзепляр <see cref="T:Dashboard.Hosts.Api.Controllers.PostExtController"/>
+            </summary>
+            <param name="postExtService">Сервис работы с расширенными объявлениями.</param>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.PostExtController.GetByIdAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Возвращает расширенное объявление по идентификатору.
+            </summary>
+            <remarks>
+            Пример:
+            curl -XGET http://host:port/postext/get-by-id
+            </remarks>
+            <param name="id">Идентификатор расширенного объявления.</param>
+            <param name="cancellationToken">Отмена операции.</param>
+            <returns>Модель расширенного объявления <see cref="T:Dashboard.Contracts.PostExtDto"/></returns>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.PostExtController.GetAllAsync(System.Threading.CancellationToken,System.Int32,System.Int32)">
+            <summary>
+            Возвращает постраничные расширенные объявления.
+            </summary>
+            <param name="cancellationToken">Отмена операции.</param>
+            <param name="pageSize">Размер страницы.</param>
+            <param name="pageIndex">Номер страницы.</param>
+            <returns>Коллекция расширенных объявлений <see cref="T:Dashboard.Contracts.PostExtDto"/></returns>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.PostExtController.CreateAsync(Dashboard.Contracts.PostExtDto,System.Threading.CancellationToken)">
+            <summary>
+            Создает расширенное объявление.
+            </summary>
+            <param name="cancellationToken">Отмена операции.</param>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.PostExtController.UpdateAsync(Dashboard.Contracts.PostExtDto,System.Threading.CancellationToken)">
+            <summary>
+            Редактирует расширенное объявление.
+            </summary>
+            <param name="cancellationToken">Отмена операции.</param>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.PostExtController.DeleteAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Удаляем расширенное объявление по идентификатору.
+            </summary>
+            <param name="id">Идентификатор расширенного объявления.</param>
+            <param name="cancellationToken">Отмена операции.</param>
+        </member>
+        <member name="T:Dashboard.Hosts.Api.Controllers.PublicUserController">
+            <summary>
+            Контроллер для отображения публичной информации о пользователе.
+            </summary>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.PublicUserController.#ctor(Dashboard.Application.AppServices.Contexts.Services.IPublicUserService)">
+            <summary>
+            Инициализирует экзепляр <see cref="T:Dashboard.Hosts.Api.Controllers.PublicUserController"/>
+            </summary>
+            <param name="publicUserService">Сервис работы с публичной информацией о пользователе.</param>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.PublicUserController.GetByIdAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Возвращает публичную часть пользователя по идентификатору.
+            </summary>
+            <remarks>
+            Пример:
+            curl -XGET http://host:port/user/get-by-id
+            </remarks>
+            <param name="id">Идентификатор пользователя.</param>
+            <param name="cancellationToken">Отмена операции.</param>
+            <returns>Модель публичной информации о пользователе <see cref="T:Dashboard.Contracts.Attachment.PublicUserDto"/></returns>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.PublicUserController.GetAllAsync(System.Threading.CancellationToken,System.Int32,System.Int32)">
+            <summary>
+            Возвращает постраничный список пользователей.
+            </summary>
+            <param name="cancellationToken">Отмена операции.</param>
+            <param name="pageSize">Размер страницы.</param>
+            <param name="pageIndex">Номер страницы.</param>
+            <returns>Коллекция пользователей <see cref="T:Dashboard.Contracts.Attachment.PublicUserDto"/></returns>
+        </member>
+        <member name="T:Dashboard.Hosts.Api.Controllers.RatingController">
+            <summary>
+            Контроллер для работы с рейтингом.
+            </summary>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.RatingController.#ctor(Dashboard.Application.AppServices.Contexts.Services.IRatingService)">
+            <summary>
+            Инициализирует экзепляр <see cref="T:Dashboard.Hosts.Api.Controllers.RatingController"/>
+            </summary>
+            <param name="ratingService">Сервис работы с рейтингом.</param>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.RatingController.GetByIdAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Возвращает рейтинг по идентификатору.
+            </summary>
+            <remarks>
+            Пример:
+            curl -XGET http://host:port/rating/get-by-id
+            </remarks>
+            <param name="id">Идентификатор рейтинга.</param>
+            <param name="cancellationToken">Отмена операции.</param>
+            <returns>Модель рейтинга <see cref="T:Dashboard.Contracts.RatingDto"/></returns>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.RatingController.GetAllAsync(System.Threading.CancellationToken,System.Int32,System.Int32)">
+            <summary>
+            Возвращает постраничные рейтинги.
+            </summary>
+            <param name="cancellationToken">Отмена операции.</param>
+            <param name="pageSize">Размер страницы.</param>
+            <param name="pageIndex">Номер страницы.</param>
+            <returns>Коллекция рейтингов <see cref="T:Dashboard.Contracts.RatingDto"/></returns>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.RatingController.CreateAsync(Dashboard.Contracts.RatingDto,System.Threading.CancellationToken)">
+            <summary>
+            Создает рейтинг.
+            </summary>
+            <param name="cancellationToken">Отмена операции.</param>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.RatingController.UpdateAsync(Dashboard.Contracts.RatingDto,System.Threading.CancellationToken)">
+            <summary>
+            Редактирует рейтинг.
+            </summary>
+            <param name="cancellationToken">Отмена операции.</param>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.RatingController.DeleteAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Удаляем рейтинг по идентификатору.
+            </summary>
+            <param name="id">Идентификатор рейтинга.</param>
+            <param name="cancellationToken">Отмена операции.</param>
+        </member>
+        <member name="T:Dashboard.Hosts.Api.Controllers.TagController">
+            <summary>
+            Контроллер для работы с тегами.
+            </summary>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.TagController.#ctor(Dashboard.Application.AppServices.Contexts.Services.ITagService)">
+            <summary>
+            Инициализирует экзепляр <see cref="T:Dashboard.Hosts.Api.Controllers.TagController"/>
+            </summary>
+            <param name="tagService">Сервис работы с тегами.</param>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.TagController.GetByIdAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Возвращает тег по идентификатору.
+            </summary>
+            <remarks>
+            Пример:
+            curl -XGET http://host:port/tag/get-by-id
+            </remarks>
+            <param name="id">Идентификатор тега.</param>
+            <param name="cancellationToken">Отмена операции.</param>
+            <returns>Модель тега <see cref="T:Dashboard.Contracts.Attachment.TagDto"/></returns>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.TagController.GetAllAsync(System.Threading.CancellationToken,System.Int32,System.Int32)">
+            <summary>
+            Возвращает постраничные теги.
+            </summary>
+            <param name="cancellationToken">Отмена операции.</param>
+            <param name="pageSize">Размер страницы.</param>
+            <param name="pageIndex">Номер страницы.</param>
+            <returns>Коллекция тегов <see cref="T:Dashboard.Contracts.Attachment.TagDto"/></returns>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.TagController.CreateAsync(Dashboard.Contracts.Attachment.TagDto,System.Threading.CancellationToken)">
+            <summary>
+            Создает тег.
+            </summary>
+            <param name="cancellationToken">Отмена операции.</param>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.TagController.UpdateAsync(Dashboard.Contracts.Attachment.TagDto,System.Threading.CancellationToken)">
+            <summary>
+            Редактирует тег.
+            </summary>
+            <param name="cancellationToken">Отмена операции.</param>
+        </member>
+        <member name="M:Dashboard.Hosts.Api.Controllers.TagController.DeleteAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Удаляем тег по идентификатору.
+            </summary>
+            <param name="id">Идентификатор тега.</param>
+            <param name="cancellationToken">Отмена операции.</param>
+        </member>
+    </members>
+</doc>
