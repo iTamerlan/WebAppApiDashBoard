@@ -4,6 +4,7 @@ using Dashboard.Application.AppServices.Contexts.Repositories;
 using Dashboard.Application.AppServices.Contexts.Services;
 using Dashboard.Contracts;
 using Dashboard.Contracts.Attachment;
+using Dashboard.Contracts.Post;
 using Dashboard.Hosts.Api.Controllers;
 using Dashboard.Infrastructure.DataAccess.Contexts.Post.Repositories;
 using Dashboard.Infrastructure.DataAccess.Contexts.Repositories;
@@ -50,8 +51,8 @@ builder.Services.AddSwaggerGen(s =>
 });
 
 
-builder.Services.AddTransient<IPostService, PostService>();
-builder.Services.AddTransient<IPostRepository, PostRepository>();
+builder.Services.AddTransient<IPostService, PostService>(); 
+builder.Services.AddTransient<IPostRepository, PostRepository>(); // Transient -- живет один вызов; новый экземл€р на каждый вызов
 
 builder.Services.AddTransient<IContentService, ContentService>();
 builder.Services.AddTransient<IContentRepository, ContentRepository>();

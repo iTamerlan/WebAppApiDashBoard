@@ -25,7 +25,7 @@
             </remarks>
             <param name="id">Идентификатор комментария.</param>
             <param name="cancellationToken">Отмена операции.</param>
-            <returns>Модель объявления <see cref="T:Dashboard.Contracts.PostDto"/></returns>
+            <returns>Модель объявления <see cref="T:Dashboard.Contracts.Post.PostDto"/></returns>
         </member>
         <member name="M:Dashboard.Hosts.Api.Controllers.CommentController.GetAllAsync(System.Threading.CancellationToken,System.Int32,System.Int32)">
             <summary>
@@ -34,7 +34,7 @@
             <param name="cancellationToken">Отмена операции.</param>
             <param name="pageSize">Размер страницы.</param>
             <param name="pageIndex">Номер страницы.</param>
-            <returns>Коллекция комментариев <see cref="T:Dashboard.Contracts.PostDto"/></returns>
+            <returns>Коллекция комментариев <see cref="T:Dashboard.Contracts.Post.PostDto"/></returns>
         </member>
         <member name="M:Dashboard.Hosts.Api.Controllers.CommentController.CreateAsync(Dashboard.Contracts.CommentDto,System.Threading.CancellationToken)">
             <summary>
@@ -178,7 +178,7 @@
             </remarks>
             <param name="id">Идентификатор объявления.</param>
             <param name="cancellationToken">Отмена операции.</param>
-            <returns>Модель объявления <see cref="T:Dashboard.Contracts.PostDto"/></returns>
+            <returns>Модель объявления <see cref="T:Dashboard.Contracts.Post.PostDto"/></returns>
         </member>
         <member name="M:Dashboard.Hosts.Api.Controllers.PostController.GetAllAsync(System.Threading.CancellationToken,System.Int32,System.Int32)">
             <summary>
@@ -187,15 +187,17 @@
             <param name="cancellationToken">Отмена операции.</param>
             <param name="pageSize">Размер страницы.</param>
             <param name="pageIndex">Номер страницы.</param>
-            <returns>Коллекция объявлений <see cref="T:Dashboard.Contracts.PostDto"/></returns>
+            <returns>Коллекция объявлений <see cref="T:Dashboard.Contracts.Post.PostDto"/></returns>
         </member>
-        <member name="M:Dashboard.Hosts.Api.Controllers.PostController.CreateAsync(Dashboard.Contracts.PostDto,System.Threading.CancellationToken)">
+        <member name="M:Dashboard.Hosts.Api.Controllers.PostController.CreateAsync(Dashboard.Contracts.Post.CreatePostDto,System.Threading.CancellationToken)">
             <summary>
             Создает объявление.
             </summary>
+            <param name="dto">Модель для создания объявления</param>
             <param name="cancellationToken">Отмена операции.</param>
+            <returns>Идентификатор созданной сущности</returns>
         </member>
-        <member name="M:Dashboard.Hosts.Api.Controllers.PostController.UpdateAsync(Dashboard.Contracts.PostDto,System.Threading.CancellationToken)">
+        <member name="M:Dashboard.Hosts.Api.Controllers.PostController.UpdateAsync(Dashboard.Contracts.Post.PostDto,System.Threading.CancellationToken)">
             <summary>
             Редактирует объявление.
             </summary>

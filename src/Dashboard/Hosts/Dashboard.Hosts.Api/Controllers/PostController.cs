@@ -1,6 +1,6 @@
 ﻿using System.Net;
 using Dashboard.Application.AppServices.Contexts.Post.Services;
-using Dashboard.Contracts;
+using Dashboard.Contracts.Post;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Dashboard.Hosts.Api.Controllers;
@@ -55,15 +55,26 @@ public class PostController : ControllerBase
     {
         return Ok();
     }
-    
+
     /// <summary>
     /// Создает объявление.
     /// </summary>
+    /// <param name="dto">Модель для создания объявления</param>
     /// <param name="cancellationToken">Отмена операции.</param>
+    /// <returns>Идентификатор созданной сущности</returns>
     [HttpPost]
-    public async Task<IActionResult> CreateAsync(PostDto dto, CancellationToken cancellationToken)
+    public async Task<IActionResult> CreateAsync(CreatePostDto dto, CancellationToken cancellationToken)
     {
-        return Created(string.Empty, null);
+        var modelId = await _postService.CreateAsync(dto, cancellationToken);
+        /*if (string.IsNullOrEmpty(dto.Title))
+        {
+            ModelState.AddModelError(nameof(dto.Title, "Поле Title должно содержать значение");
+        }
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }*/
+        return Created(nameof(CreateAsync), modelId);
     }
     
     /// <summary>
