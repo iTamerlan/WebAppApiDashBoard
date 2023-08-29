@@ -1,7 +1,7 @@
-﻿using Dashboard.Contracts.Attachment;
-using Dashboard.Contracts.Base;
+﻿using Dashboard.Contracts.Base;
+using Dashboard.Contracts.PublicUser;
 
-namespace Dashboard.Contracts.Attachment;
+namespace Dashboard.Contracts.Tag;
 
 /// <summary>
 /// Тэг.

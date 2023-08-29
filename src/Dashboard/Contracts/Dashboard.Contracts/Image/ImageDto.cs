@@ -1,7 +1,7 @@
-﻿using Dashboard.Contracts.Attachment;
-using Dashboard.Contracts.Base;
+﻿using Dashboard.Contracts.Base;
+using Dashboard.Contracts.PublicUser;
 
-namespace Dashboard.Contracts.Attachment;
+namespace Dashboard.Contracts.Image;
 
 /// <summary>
 /// Изображение.
@@ -19,7 +19,7 @@ public class ImageDto : BaseDto
     /// <summary>
     /// Адрес изображения.
     /// </summary>
-    public string UrlImage { get; set; }    
+    public string UrlImage { get; set; }
     /// <summary>
     /// Какой пользователь загрузил.
     /// </summary>

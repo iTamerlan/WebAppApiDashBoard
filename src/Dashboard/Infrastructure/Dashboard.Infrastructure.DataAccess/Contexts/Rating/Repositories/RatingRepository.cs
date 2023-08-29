@@ -1,6 +1,6 @@
 ﻿using Dashboard.Application.AppServices.Contexts.Rating.Repositories;
-using Dashboard.Contracts;
 using Dashboard.Contracts.Attachment;
+using Dashboard.Contracts.Rating;
 
 namespace Dashboard.Infrastructure.DataAccess.Contexts.Rating.Repositories;
 

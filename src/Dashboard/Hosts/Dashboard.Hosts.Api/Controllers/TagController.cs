@@ -1,7 +1,7 @@
 ﻿using System.Net;
 using Dashboard.Application.AppServices.Contexts.Post.Services;
 using Dashboard.Application.AppServices.Contexts.Tag.Services;
-using Dashboard.Contracts.Attachment;
+using Dashboard.Contracts.Tag;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Dashboard.Hosts.Api.Controllers;

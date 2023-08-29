@@ -1,4 +1,4 @@
-using Dashboard.Contracts.Attachment;
+using Dashboard.Contracts.Image;
 
 namespace Dashboard.Application.AppServices.Contexts.Image.Repositories;
 

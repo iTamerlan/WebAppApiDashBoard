@@ -1,8 +1,8 @@
-﻿using Dashboard.Contracts.Attachment;
-using Dashboard.Contracts.Base;
+﻿using Dashboard.Contracts.Base;
 using Dashboard.Contracts.Comment;
+using Dashboard.Contracts.PublicUser;
 
-namespace Dashboard.Contracts;
+namespace Dashboard.Contracts.Rating;
 
 /// <summary>
 /// Комментарий.

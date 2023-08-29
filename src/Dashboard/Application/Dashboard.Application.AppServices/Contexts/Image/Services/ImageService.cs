@@ -1,5 +1,5 @@
 using Dashboard.Application.AppServices.Contexts.Image.Repositories;
-using Dashboard.Contracts.Attachment;
+using Dashboard.Contracts.Image;
 
 namespace Dashboard.Application.AppServices.Contexts.Image.Services;
 

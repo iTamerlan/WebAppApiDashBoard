@@ -1,6 +1,6 @@
 ﻿using Dashboard.Contracts.Base;
 
-namespace Dashboard.Contracts.Attachment;
+namespace Dashboard.Contracts.PublicUser;
 
 /// <summary>
 /// Публичная информация о пользователе.
