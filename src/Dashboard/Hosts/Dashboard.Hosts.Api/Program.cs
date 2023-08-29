@@ -1,13 +1,33 @@
+using Dashboard.Application.AppServices.Contexts.Comment.Repositories;
+using Dashboard.Application.AppServices.Contexts.Comment.Services;
+using Dashboard.Application.AppServices.Contexts.Content.Repositories;
+using Dashboard.Application.AppServices.Contexts.Content.Services;
+using Dashboard.Application.AppServices.Contexts.Image.Repositories;
+using Dashboard.Application.AppServices.Contexts.Image.Services;
 using Dashboard.Application.AppServices.Contexts.Post.Repositories;
 using Dashboard.Application.AppServices.Contexts.Post.Services;
-using Dashboard.Application.AppServices.Contexts.Repositories;
-using Dashboard.Application.AppServices.Contexts.Services;
+using Dashboard.Application.AppServices.Contexts.PostExt.Repositories;
+using Dashboard.Application.AppServices.Contexts.PostExt.Services;
+using Dashboard.Application.AppServices.Contexts.PublicUser.Repositories;
+using Dashboard.Application.AppServices.Contexts.PublicUser.Services;
+using Dashboard.Application.AppServices.Contexts.Rating.Repositories;
+using Dashboard.Application.AppServices.Contexts.Rating.Services;
+using Dashboard.Application.AppServices.Contexts.Tag.Repositories;
+using Dashboard.Application.AppServices.Contexts.Tag.Services;
 using Dashboard.Contracts;
 using Dashboard.Contracts.Attachment;
+using Dashboard.Contracts.Comment;
+using Dashboard.Contracts.Content;
 using Dashboard.Contracts.Post;
 using Dashboard.Hosts.Api.Controllers;
+using Dashboard.Infrastructure.DataAccess.Contexts.Comment.Repositories;
+using Dashboard.Infrastructure.DataAccess.Contexts.Content.Repositories;
+using Dashboard.Infrastructure.DataAccess.Contexts.Image.Repositories;
 using Dashboard.Infrastructure.DataAccess.Contexts.Post.Repositories;
-using Dashboard.Infrastructure.DataAccess.Contexts.Repositories;
+using Dashboard.Infrastructure.DataAccess.Contexts.PostExt.Repositories;
+using Dashboard.Infrastructure.DataAccess.Contexts.PublicUser.Repositories;
+using Dashboard.Infrastructure.DataAccess.Contexts.Rating.Repositories;
+using Dashboard.Infrastructure.DataAccess.Contexts.Tag.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -5,7 +5,7 @@ namespace Dashboard.Domain.Comments;
 /// <summary>
 /// Сущность комментария.
 /// </summary>
-public class Content : BaseEntity
+public class Comment : BaseEntity
 {
     /// <summary>
     /// Заголовок комментария.
