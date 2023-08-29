@@ -1,4 +1,4 @@
-# iTamerlan / WebAppApiDashBoard
+## iTamerlan / WebAppApiDashBoard
 
 [![All Contributors](https://img.shields.io/github/contributors/iTamerlan/WebAppApiDashBoard)](#contributors-)
 ![Issues](https://img.shields.io/github/issues/iTamerlan/WebAppApiDashBoard)
@@ -7,8 +7,12 @@
 ![Stars](https://img.shields.io/github/stars/iTamerlan/WebAppApiDashBoard)
 ![License](https://img.shields.io/github/license/iTamerlan/WebAppApiDashBoard)
 
-# Translations
+## Translations
 <kbd>[<img title="Русский" alt="Русский" src="https://gcore.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/ru.svg" width="22">](https://github.com/iTamerlan/WebAppApiDashBoard)</kbd>
+
+## Возможности
+
+- Отсутствуют...
 
 ## ✅ Текущее развитие
 
