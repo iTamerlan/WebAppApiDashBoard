@@ -8,7 +8,7 @@
 ![License](https://img.shields.io/github/license/iTamerlan/WebAppApiDashBoard)
 
 # Translations
-<kbd>[<img title="Русский" alt="Русский" src="https://gcore.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/ru.svg" width="22">](https://github.com/iTamerlan/WebAppApiDashBoard/edit/master/README.md)</kbd>
+<kbd>[<img title="Русский" alt="Русский" src="https://gcore.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/ru.svg" width="22">](https://github.com/iTamerlan/WebAppApiDashBoard)</kbd>
 
 ## ✅ Текущее развитие
 
