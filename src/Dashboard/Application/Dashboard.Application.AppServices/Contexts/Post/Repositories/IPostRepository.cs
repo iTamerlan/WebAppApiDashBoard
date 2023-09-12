@@ -12,8 +12,8 @@ public interface IPostRepository
     /// </summary>
     /// <param name="id">Идентификатор объявления.</param>
     /// <param name="cancellationToken">Отмена операции.</param>
-    /// <returns>Модель объявления <see cref="PostDto"/></returns>
-    Task<PostDto> GetByIdAsync(Guid id, CancellationToken cancellationToken);
+    /// <returns>Модель объявления <see cref="Domain.Posts.Post"/></returns>
+    Task<Domain.Posts.Post> GetByIdAsync(Guid id, CancellationToken cancellationToken);
 
     /// <summary>
     /// Создает объявление по модели.

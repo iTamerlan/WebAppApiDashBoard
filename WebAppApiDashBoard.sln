@@ -35,6 +35,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard.Infrastructure", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard.Infrastructure.ComponentRegistrar", "src\Dashboard\Infrastructure\Dashboard.Infrastructure.ComponentRegistrar\Dashboard.Infrastructure.ComponentRegistrar.csproj", "{2EB66CB8-98F2-4862-A205-98F2BD7519A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboards.Hosts.DbMigrator", "Dashboards.Hosts.DbMigrator\Dashboards.Hosts.DbMigrator.csproj", "{7401CC9D-3D2F-431F-A823-0A7E9342CD56}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,10 @@ Global
 		{2EB66CB8-98F2-4862-A205-98F2BD7519A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EB66CB8-98F2-4862-A205-98F2BD7519A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EB66CB8-98F2-4862-A205-98F2BD7519A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7401CC9D-3D2F-431F-A823-0A7E9342CD56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7401CC9D-3D2F-431F-A823-0A7E9342CD56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7401CC9D-3D2F-431F-A823-0A7E9342CD56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7401CC9D-3D2F-431F-A823-0A7E9342CD56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -93,6 +99,7 @@ Global
 		{8D02FA52-8A7B-4890-BAB0-D7D10D6E32D8} = {9B4BC0B8-9E7A-4B5E-9727-8C776A9F692D}
 		{42462D76-4511-4CA0-8D74-CC27D51FEA42} = {9B4BC0B8-9E7A-4B5E-9727-8C776A9F692D}
 		{2EB66CB8-98F2-4862-A205-98F2BD7519A0} = {9B4BC0B8-9E7A-4B5E-9727-8C776A9F692D}
+		{7401CC9D-3D2F-431F-A823-0A7E9342CD56} = {B89D1FEF-DF7F-4994-919D-90695D0466A3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0E2B4B50-35F0-4920-9A2A-89452C145B48}
